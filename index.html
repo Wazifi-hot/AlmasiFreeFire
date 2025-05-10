@@ -1,126 +1,55 @@
+<!-- index.html - الصفحة الرئيسية -->
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تتبع الطلب - FreeFireSudan.com</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --main-color: #ff9800;
-      --bg-light: #f4f4f4;
-      --bg-dark: #121212;
-      --text-light: #ffffff;
-      --text-dark: #000000;
-    }
-
-    body {
-      font-family: 'Cairo', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-light);
-      color: var(--text-dark);
-      transition: background-color 0.3s, color 0.3s;
-    }
-
-    body.dark-mode {
-      background-color: var(--bg-dark);
-      color: var(--text-light);
-    }
-
-    header {
-      background-color: var(--main-color);
-      padding: 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-      color: white;
-    }
-
-    .toggle-theme {
-      position: absolute;
-      left: 1rem;
-      top: 1rem;
-      background: #fff;
-      color: #333;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .track-container {
-      max-width: 700px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .track-box {
-      background-color: #fff3e0;
-      padding: 1.5rem;
-      border-radius: 10px;
-    }
-
-    .track-box h3 {
-      margin: 0 0 1rem;
-      color: var(--main-color);
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 0.7rem;
-      margin: 1rem 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    button {
-      background-color: var(--main-color);
-      color: white;
-      padding: 0.7rem 1.5rem;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .message {
-      margin-top: 1rem;
-      font-size: 1.1rem;
-      background-color: #e0f7fa;
-      padding: 1rem;
-      border-radius: 8px;
-      display: none;
-    }
-  </style>
+  <title>ألماسي فري فاير - الرئيسية</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button class="toggle-theme" onclick="toggleTheme()">تبديل الوضع</button>
   <header>
-    <h1>تتبع الطلب</h1>
+    <h1>ألماسي فري فاير - FreeFireSudan.com</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="buy.html">شراء الجواهر</a></li>
+        <li><a href="payment.html">طرق الدفع</a></li>
+        <li><a href="track.html">تتبع الطلب</a></li>
+        <li><a href="faq.html">الأسئلة الشائعة</a></li>
+        <li><a href="about.html">من نحن</a></li>
+        <li><a href="contact.html">اتصل بنا</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="track-container">
-    <div class="track-box">
-      <h3>أدخل رقم الطلب أو معرف اللاعب (UID):</h3>
-      <input type="text" id="orderInput" placeholder="مثال: 123456 أو 987654321">
-      <button onclick="trackOrder()">تتبع</button>
-      <div class="message" id="message">
-        تم استلام طلبك بنجاح. سيتم شحن الجواهر خلال مدة لا تتجاوز 24 ساعة من وقت التقديم. شكرًا لثقتك بنا!
-      </div>
-    </div>
-  </div>
+  <main>
+    <section class="offers">
+      <h2>أسعار شحن جواهر فري فاير</h2>
+      <p>الشحن متوفر الآن ✅</p>
+      <ul>
+        <li>100 💎 = 2700</li>
+        <li>200 💎 = 5000</li>
+        <li>530 💎 = 14000</li>
+        <li>1160 💎 = 27000</li>
+      </ul>
 
-  <script>
-    function toggleTheme() {
-      document.body.classList.toggle("dark-mode");
-    }
+      <h3>متوفر عضويات + تصريح عبر الايدي</h3>
+      <ul>
+        <li>تصريح 💎 = 4500</li>
+        <li>أسبوعية 💎 = 5500</li>
+        <li>شهرية 💎 = 20500</li>
+      </ul>
+      <p>الشحن عبر تطبيق فوري فقط</p>
+    </section>
 
-    function trackOrder() {
-      const messageBox = document.getElementById("message");
-      messageBox.style.display = "block";
-    }
-  </script>
+    <section class="cta">
+      <a href="buy.html" class="button">اطلب الآن</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ألماسي فري فاير | جميع الحقوق محفوظة</p>
+  </footer>
 </body>
-</html>
+    </html>
